@@ -24,7 +24,7 @@ h1 {
     background: linear-gradient(to bottom right, #CF00BA 0%, #5915CF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 h2 {
@@ -35,28 +35,28 @@ h2 {
 
 .console {
     font-family: "Ubuntu Mono", monospace;
-    width: 700px;
-    height: 450px;
+    width: 40rem;
+    height: 25rem;
     box-sizing: border-box;
     margin: auto;
 }
 
 .console header {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     background-color: #555;
-    height: 45px;
-    line-height: 45px;
+    height: 2.75rem;
+    line-height: 2.75rem;
     text-align: center;
     color: #DDD;
 }
 
 .console .console-body {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     box-sizing: border-box;
-    padding: 20px;
-    height: calc(100% - 40px);
+    padding: 1.25rem;
+    height: calc(100% - 2.5rem);
     background-color: #000;
     color: #63de00;
 }
