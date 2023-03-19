@@ -10,6 +10,6 @@ function progressAnimation() {
     let segment = document.querySelector("span");
 
     setInterval(function() {
-        segment.innerHTML === "=" ? segment.innerHTML = "-" : segment.innerHTML = "="
+        segment.innerText === "=" ? segment.innerText = "-" : segment.innerText = "="
     }, 500);
 }
