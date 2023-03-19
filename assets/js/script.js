@@ -7,7 +7,7 @@ function init() {
 }
 
 function progressAnimation() {
-    let segment = document.querySelector("span");
+    let segment = document.querySelector("#segment");
 
     setInterval(function() {
         segment.innerText === "=" ? segment.innerText = "-" : segment.innerText = "="
