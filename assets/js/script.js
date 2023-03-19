@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init() {
     progressAnimation();
-    console.log("Hello")
+    console.log("Hello world")
 }
 
 function progressAnimation() {
