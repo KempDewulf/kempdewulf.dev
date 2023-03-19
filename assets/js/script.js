@@ -7,13 +7,9 @@ function init() {
 }
 
 function progressAnimation() {
-    const $element = document.querySelector("span");
+    let segment = document.querySelector("span");
 
     setInterval(function() {
-        if ($element.innerHTML === "=") {
-            $element.innerHTML = "-";
-        } else {
-            $element.innerHTML = "="
-        }
+        segment.innerHTML === "=" ? segment.innerHTML = "-" : segment.innerHTML = "="
     }, 500);
 }
