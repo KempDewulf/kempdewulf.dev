@@ -17,30 +17,6 @@ main {
     row-gap: 2rem;
 }
 
-svg.error-code {
-    width: 25rem;
-    height: 25rem;
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-h1.error-code {
-    font-weight: 900;
-    font-size: 15rem;
-    /*color: #363636;*/
-    background: linear-gradient(to bottom right, #CF00BA 0%, #5915CF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 2rem;
-}
-
-p.error-message {
-    font-family: "Montserat", sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-}
-
 .console {
     font-family: "Ubuntu Mono", monospace;
     width: 40rem;
