@@ -1,4 +1,5 @@
 body {
+    overflow: hidden;
     height: 100vh;
     font-size: 28px;
     font-family: 'Manrope', sans-serif;
@@ -25,13 +26,9 @@ article {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem;
     text-align: center;
     overflow: hidden;
-}
-
-article p {
-    padding: 10%;
+    padding: 20px 20px 2em;
 }
 
 button {
@@ -47,7 +44,6 @@ button {
     position: absolute;
 }
 
-
 button:hover {
     box-shadow: 0 0 1em 0.125rem hsl(150, 100%, 66%);
 }
@@ -58,16 +54,21 @@ button:disabled {
 }
 
 @media screen and (max-width: 768px) {
-    article {
-        width: 50%;
-    }
+
     article p {
         font-size: 0.7em;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 640px){
     article {
+        width: 80vw;
+    }
+    article p {
+        width: 100%;
+    }
+    article > svg {
         width: 30%;
     }
 }
