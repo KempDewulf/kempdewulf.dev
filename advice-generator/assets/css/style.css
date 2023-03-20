@@ -1,4 +1,26 @@
 body {
+    height: 100vh;
     font-size: 28px;
     font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+}
+
+article {
+    background: hsl(217, 19%, 24%);
+    border-radius: 2rem;
+    height: 30rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+button {
+
 }
