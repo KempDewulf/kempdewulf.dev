@@ -17,6 +17,14 @@ main {
     row-gap: 2rem;
 }
 
+svg.error-code {
+    width: 25rem;
+    height: 25rem;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 h1.error-code {
     font-weight: 900;
     font-size: 15rem;
