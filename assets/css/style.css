@@ -35,7 +35,7 @@ h1.error-code {
     margin-top: 2rem;
 }
 
-h2.error-message {
+p.error-message {
     font-family: "Montserat", sans-serif;
     font-size: 2rem;
     font-weight: 500;
