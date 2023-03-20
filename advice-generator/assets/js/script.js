@@ -5,19 +5,19 @@ document.addEventListener("DOMContentLoaded", init);
 const API_URL = "https://api.adviceslip.com/advice";
 
 function init() {
-    getAdvice()
-    document.querySelector("button").addEventListener("click", getAdvice)
-}
-
-function getAdvice() {
     let advice = document.querySelector("#advice");
     let adviceID = document.querySelector("#adviceID");
     let button = document.querySelector("button");
-    
-    fetch(API_URL)
+    getAdvice(advice, adviceID, button)
+    document.querySelector("button").addEventListener("click", function () {
+        getAdvice(advice, adviceID, button)});
+}
+
+function getAdvice(advice, adviceID, button) {
+    fetch(API_URL, {cache: "no-cache"})
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            console.log(data);
             adviceID.innerText = data.slip.id;
             advice.innerText = "\"" + data.slip.advice + "\"";
         });
@@ -26,5 +26,5 @@ function getAdvice() {
     
     setTimeout(function() {
         button.disabled = false;
-    }, 2000)
+    }, 2000);
 }
