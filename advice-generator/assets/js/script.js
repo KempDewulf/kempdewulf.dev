@@ -26,5 +26,5 @@ function getAdvice(advice, adviceID, button) {
     
     setTimeout(function() {
         button.disabled = false;
-    }, 2000);
+    }, 1000);
 }
