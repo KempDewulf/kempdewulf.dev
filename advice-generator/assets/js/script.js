@@ -17,7 +17,6 @@ function getAdvice(advice, adviceID, button) {
     fetch(API_URL, {cache: "no-cache"})
         .then(res => res.json())
         .then(data => {
-            console.log(data);
             adviceID.innerText = data.slip.id;
             advice.innerText = "\"" + data.slip.advice + "\"";
         });
