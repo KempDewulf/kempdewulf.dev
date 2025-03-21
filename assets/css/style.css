@@ -50,3 +50,20 @@ main {
 .console .console-body p {
     line-height: 1.5rem;
 }
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer a {
+    color: #0075FF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
