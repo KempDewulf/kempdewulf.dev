@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init() {
     renderProgressBar()
-    progressAnimation();
 }
 
 function renderProgressBar() {
@@ -13,10 +12,12 @@ function renderProgressBar() {
     const filled = "=";
     const unFilled = "-";
     const segmentAmount = 21;
-    const filledSegments = Math.round(21 * progress);
+    const filledSegments = Math.round(segmentAmount * progress);
     const unFilledSegments = segmentAmount - filledSegments;
     progressBar.innerHTML = `Progress: [${filled.repeat(filledSegments - 1)}<span id="segment">=</span>${unFilled.repeat(unFilledSegments)}]
-                 ${progress.toFixed(2) * 100 + "%"} | ETA: 2025 `;
+                 ${(progress * 100).toFixed(2) + "%" } | ETA: Summer 2025 `;
+
+    progressAnimation();
 }
     
     
@@ -25,14 +26,16 @@ function renderProgressBar() {
 function getProgress() {
     const start = new Date(2022, 8, 21).getTime();
     const now = new Date().getTime();
-    const end = new Date(2025, 6, 31).getTime();
-    return ((now - start) / (end - start));
+    const end = new Date(2025, 5, 30).getTime();
+    return (now - start) / (end - start);
 }
 
 function progressAnimation() {
     let segment = document.querySelector("#segment");
 
-    setInterval(function() {
-        segment.innerText === "=" ? segment.innerText = "-" : segment.innerText = "="
+    if (!segment) return;
+    
+    setInterval(() => {
+        segment.innerText = segment.innerText === "=" ? "-" : "=";
     }, 500);
 }
