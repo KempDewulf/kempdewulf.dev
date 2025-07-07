@@ -51,6 +51,15 @@ main {
     line-height: 1.5rem;
 }
 
+.y-key {
+    cursor: pointer;
+}
+
+.response {
+    color: #63de00;
+    font-weight: 500;
+}
+
 footer {
     text-align: center;
     margin-top: 2rem;
